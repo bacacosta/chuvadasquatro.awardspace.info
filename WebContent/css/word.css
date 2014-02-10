@@ -1,0 +1,139 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+img {
+	border:0;
+}
+
+body {
+	background:#9b9ab3 url("../img/word/background.gif") no-repeat;
+	font:14px Arial, sans-serif;
+}
+
+#box {
+	width:600px;
+	border-top:1px solid #000000;
+	border-right:3px solid #000000;
+	border-bottom:3px solid #000000;
+	border-left:1px solid #000000;
+	background:#ffffff;
+	margin:50px;
+	padding:60px 100px;
+}
+
+#header {
+	border-bottom:1px solid #000000;
+	margin-bottom:30px;
+	padding:30px 0 8px 0;
+}
+
+#header h1 {
+	font:36px Arial Black, sans-serif;
+}
+
+#header address {
+	float:right;
+	margin-top:-70px;
+	font-size:12px;
+	font-style:normal;
+}
+
+#menu {
+	float:left;
+	width:170px;
+}
+
+#menu li {
+	list-style:none;
+	padding:10px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+li.normal {
+	background:#ffffff;
+}
+
+li.normal a {
+	color:#000000;
+	text-decoration:none;
+}
+
+li.normal a:hover {
+	text-decoration:underline;
+}
+
+li.highlight {
+	background:#cccccc;
+}
+
+li.highlight a {
+	color:#000000;
+	text-decoration:none;
+}
+
+#content {
+	float:right;
+	width:410px;
+	height:400px;
+	overflow:auto;
+	margin-bottom:30px;
+	padding:10px;
+}
+
+div.normal {
+	background:#cccccc;
+}
+
+div.loading {
+	background:#cccccc url("../img/word/loading.gif") no-repeat center;
+}
+
+#content ul {
+	margin-left:20px;
+	line-height:26px;
+}
+
+#footer {
+	clear:both;
+	border-top:1px solid #000000;
+	padding-bottom:30px;
+}
+
+#styleswitcher {
+	float:left;
+	padding-top:4px;
+}
+
+#styleswitcher img {
+	border:1px solid #000000;
+	vertical-align:middle;
+}
+
+#styleCredits {
+	margin-left:4px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#download {
+	float:left;
+	padding:6px 30px;
+}
+
+#download a {
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
+}
+
+#download a:hover {
+	font-weight:bold;
+}
+
+#w3cicons {
+	float:right;
+	padding-top:4px;
+}

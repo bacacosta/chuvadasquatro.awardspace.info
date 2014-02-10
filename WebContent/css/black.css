@@ -1,0 +1,129 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+img {
+	border:0;
+}
+
+body {
+	background:#000000;
+	font:12px Courier New, monospace;
+	color:#ffffff;
+}
+
+#box {
+	width:800px;
+	margin:20px auto;
+}
+
+#header {
+	padding:10px 0;
+	text-align:right;
+}
+
+#header h1 {
+	font-size:56px;
+	text-transform:uppercase;
+}
+
+#header address {
+	float:right;
+	margin-top:-70px;
+	font-size:16px;
+	font-weight:bold;
+	font-style:normal;
+}
+
+#menu li {
+	float:left;
+	border-top:1px solid #ffffff;
+	border-right:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+	margin-right:10px;
+	padding:10px;
+	list-style:none;
+	font-weight:bold;
+}
+
+li.normal {
+	background:#000000;
+}
+
+li.normal a {
+	color:#ffffff;
+	text-decoration:none;
+}
+
+li.normal a:hover {
+	text-decoration:underline;
+}
+
+li.highlight {
+	background:#ffffff;
+}
+
+li.highlight a {
+	color:#000000;
+	text-decoration:none;
+}
+
+#content {
+	clear:both;
+	height:380px;
+	padding:10px;
+	overflow:auto;
+	color:#000000;
+}
+
+#content a {
+	color:#000000;
+}
+
+div.normal {
+	background:#ffffff;
+}
+
+div.loading {
+	background:#ffffff url("../img/black/loading.gif") no-repeat center;
+}
+
+#content ul {
+	margin-left:20px;
+	line-height:26px;
+}
+
+#styleswitcher {
+	float:left;
+	padding:4px 0;
+}
+
+#styleswitcher img {
+	border:1px solid #ffffff;
+	vertical-align:middle;
+}
+
+#styleCredits {
+	margin-left:4px;
+}
+
+#download {
+	float:left;
+	padding:6px 100px;
+}
+
+#download a {
+	color:#ffffff;
+	font-size:12px;
+	text-decoration:none;
+}
+
+#download a:hover {
+	text-decoration:underline;
+}
+
+#w3cicons {
+	float:right;
+	padding-top:4px;
+}
