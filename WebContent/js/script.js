@@ -83,7 +83,7 @@ function setStyleCredits(title) {
 function setActiveStyle(title) {
 	var linkList = document.getElementsByTagName("link");
 	for (i = 0; i < linkList.length; i++) {
-		if (linkList[i].getAttribute("rel").indexOf("style") != 1 && linkList[i].getAttribute("title"))
+		if (linkList[i].getAttribute("rel").indexOf("style") != -1 && linkList[i].getAttribute("title"))
 			linkList[i].disabled = true;
 		if (linkList[i].getAttribute("title") == title)
 			linkList[i].disabled = false;

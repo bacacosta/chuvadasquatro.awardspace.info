@@ -23,29 +23,29 @@ body {
 	padding:60px 100px;
 }
 
-#header {
+header {
 	border-bottom:1px solid #000000;
 	margin-bottom:30px;
 	padding:30px 0 8px 0;
 }
 
-#header h1 {
+header h1 {
 	font:36px Arial Black, sans-serif;
 }
 
-#header address {
+header address {
 	float:right;
 	margin-top:-70px;
 	font-size:12px;
 	font-style:normal;
 }
 
-#menu {
+nav {
 	float:left;
 	width:170px;
 }
 
-#menu li {
+nav li {
 	list-style:none;
 	padding:10px;
 	font-size:16px;
@@ -74,7 +74,7 @@ li.highlight a {
 	text-decoration:none;
 }
 
-#content {
+main {
 	float:right;
 	width:410px;
 	height:400px;
@@ -83,20 +83,20 @@ li.highlight a {
 	padding:10px;
 }
 
-div.normal {
+main.normal {
 	background:#cccccc;
 }
 
-div.loading {
+main.loading {
 	background:#cccccc url("../img/word/loading.gif") no-repeat center;
 }
 
-#content ul {
+main ul {
 	margin-left:20px;
 	line-height:26px;
 }
 
-#footer {
+footer {
 	clear:both;
 	border-top:1px solid #000000;
 	padding-bottom:30px;
