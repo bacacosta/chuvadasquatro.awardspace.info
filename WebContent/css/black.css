@@ -104,7 +104,7 @@ main ul {
 	vertical-align:middle;
 }
 
-#styleCredits {
+#stylecredits {
 	margin-left:4px;
 }
 
@@ -121,9 +121,4 @@ main ul {
 
 #download a:hover {
 	text-decoration:underline;
-}
-
-#w3cicons {
-	float:right;
-	padding-top:4px;
 }

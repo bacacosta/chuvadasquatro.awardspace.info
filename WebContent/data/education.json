@@ -1,0 +1,19 @@
+{"education": {
+	"label": "Education",
+	"items": [
+		{
+			"label": "CEFET/PA (Bel&eacute;m/Brazil): 2000 - 2004",
+			"items": [
+				"Technologist in Computer Science",
+				"Software development, network administration and hardware maintenance"
+			]
+		},
+		{
+			"label": "UNIP (S&atilde;o Paulo/Brazil): 2005 - 2006",
+			"items": [
+				"Specialization in Project and Development of Web Systems",
+				"Web and distributed programming with Java and RUP development process"
+			]
+		}
+	]
+}}

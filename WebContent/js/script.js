@@ -94,7 +94,7 @@ function setActiveStyle(title) {
 function getActiveStyle() {
 	var linkList = document.getElementsByTagName("link");
 	for (i = 0; i < linkList.length; i++)
-		if (linkList[i].getAttribute("rel").indexOf("style") != 1 && linkList[i].getAttribute("title") && !linkList[i].disabled)
+		if (linkList[i].getAttribute("rel").indexOf("style") != -1 && linkList[i].getAttribute("title") && !linkList[i].disabled)
 			return linkList[i].getAttribute("title");
 	return null;
 }
@@ -102,7 +102,7 @@ function getActiveStyle() {
 function getPreferredStyle() {
 	var linkList = document.getElementsByTagName("link");
 	for (i = 0; i < linkList.length; i++)
-		if (linkList[i].getAttribute("rel").indexOf("style") != 1 && linkList[i].getAttribute("rel").indexOf("alt") == -1 && linkList[i].getAttribute("title"))
+		if (linkList[i].getAttribute("rel").indexOf("style") != -1 && linkList[i].getAttribute("rel").indexOf("alt") == -1 && linkList[i].getAttribute("title"))
 			return linkList[i].getAttribute("title");
 	return null;
 }

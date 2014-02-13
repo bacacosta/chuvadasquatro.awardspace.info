@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	setActiveStyle("word");
+	setActiveStyle(getCachedStyle() ? getCachedStyle() : "word");
 	getPage("info");
 });
 
@@ -14,9 +14,18 @@ $("#styleswitcher a").click(function() {
 function getPage(page) {
 	$("#menu li").removeClass("highlight").addClass("normal");
 	$("#" + page).removeClass("normal").addClass("highlight");
-	$.get("data/" + page + ".html", function(data) {
-		$("#content").addClass("normal");
-		$("#content").html(data);
+	$("#content").removeClass("normal").addClass("loading");
+	$.getJSON("data/" + page + ".json", function(data) {
+		var items = [];
+		$.each(data, function(key, value) {
+			items.push("<li>" + value + "</li>");
+		});
+		$("#content").html($("<ul />", {
+			html: items.join("")
+		}));
+		// print generated HTML in console
+		console.log($("#content").html());
+		$("#content").removeClass("loading").addClass("normal");
 	});
 }
 
@@ -30,6 +39,7 @@ function setActiveStyle(title) {
 		}
 	});
 	setStyleCredits(title);
+	setCachedStyle(title);
 }
 
 function setStyleCredits(title) {
@@ -42,5 +52,17 @@ function setStyleCredits(title) {
 			credits = "Black by Rodrigo Costa";
 		break;
 	}
-	$("#styleCredits").html(credits);
+	$("#stylecredits").html(credits);
+}
+
+function getCachedStyle() {
+	if (typeof(Storage) !== "undefined") {
+		return localStorage.getItem("rmcStyle");
+	}
+}
+
+function setCachedStyle(title) {
+	if (typeof(Storage) !== "undefined") {
+		localStorage.setItem("rmcStyle", title);
+	}
 }
