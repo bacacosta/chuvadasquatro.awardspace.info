@@ -16,17 +16,26 @@ function getPage(page) {
 	$("#" + page).removeClass("normal").addClass("highlight");
 	$("#content").removeClass("normal").addClass("loading");
 	$.getJSON("data/" + page + ".json", function(data) {
-		var items = [];
-		$.each(data, function(key, value) {
-			items.push("<li>" + value + "</li>");
-		});
-		$("#content").html($("<ul />", {
-			html: items.join("")
-		}));
+		$("#content").html(buildHTML(data));
 		// print generated HTML in console
 		console.log($("#content").html());
 		$("#content").removeClass("loading").addClass("normal");
 	});
+}
+
+function buildHTML(data) {
+	var html = "<ul>";
+	$.each(data, function(key, value) {
+		html += "<li>";
+		if (value instanceof Object) {
+			html += buildHTML(value);
+		} else {
+			html += value;
+		}
+		html += "</li>";
+	});
+	html += "</ul>";
+	return html;
 }
 
 function setActiveStyle(title) {
