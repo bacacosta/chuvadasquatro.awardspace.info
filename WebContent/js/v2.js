@@ -52,7 +52,7 @@ function setActiveStyle(title) {
 }
 
 function setStyleCredits(title) {
-	var credits;
+	var credits = "";
 	switch(title) {
 		case "word":
 			credits = "Word by Rodrigo Costa";
