@@ -36,7 +36,7 @@ function buildHTML(html, data, recursive) {
 		if (value instanceof Object) {
 			buildHTML(html, value, true);
 		} else {
-			html.push(value);
+			html.push(value.substring(0, 7) == "http://" ? "<a href=\"" + value + "\" target=\"_blank\">" + value + "</a>" : value);
 		}
 		html.push("</li>");
 	});
