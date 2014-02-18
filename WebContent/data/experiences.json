@@ -1,0 +1,178 @@
+[
+	"adviqo AG (Berlin/Germany): 09/2013 - current",
+	[
+		"http://www.adviqo.com/",
+		"http://www.questico.de/",
+		"http://www.thecircle.com/",
+		"http://www.kosmica.pl/",
+		"Function: Java/Shell/SQL Programmer",
+		"Tasks:",
+		[
+			"Development and maintenance of a backend system used by several domains worldwide, written in Java using Struts framework and EJB 2.1",
+			"Mobile frontend development with JSP and JQuery",
+			"SQL development for Oracle",
+			"Scrum agile software development"
+		],
+		"Achievements:",
+		[
+			"High availability of backend system, with downtime under one day per year",
+			"Development of a mobile interface for Questico"
+		]
+	],
+	"Magic Internet GmbH (Berlin/Germany): 01/2011 - 08/2013",
+	[
+		"http://www.magicinternet.de/",
+		"http://www.myvideo.de/",
+		"http://www.myvideo.tv/",
+		"Function: Java/Python/Shell/SQL Programmer",
+		"Tasks:",
+		[
+			"Maintenance and further development of JBackend, a backend system written in Java using Spring framework, which exchanges data with a PHP frontend through XML messages",
+			"SQL development for PostgreSQL, writing and enhancing stored procedures responsible for part of the business logic and synchronization among the database structure",
+			"Python and Shell scripting for database synchronization and deployment process",
+			"MemcacheDB and Kyoto Tycoon for caching",
+			"Use of tsearch2, an extension for PostgreSQL, and Sphinx for full text searching"
+		],
+		"Achievements:",
+		[
+			"Reimplementation of old methods improving performance and extensibility",
+			"Refactoring of caching structure, upgrading to Kyoto Tycoon and XMemcached client",
+			"Development of an internal CMS written using JavaServer Faces"
+		]
+	],
+	"Unister GmbH (Berlin/Germany): 05/2009 - 11/2010",
+	[
+		"http://www.unister.de/",
+		"http://www.jux.de/",
+		"http://www.webmail.de/",
+		"http://www.webcity.de/",
+		"Function: PHP/Java/Shell Programmer",
+		"Tasks:",
+		[
+			"Conversion of JUX.de, a community portal, into a webmail provider called webmail.de/webcity.de, using Zimbra, a open source collaboration suite from Yahoo!",
+			"Remodeling and improvement of the old PHP code from JUX.de using O/R mapping and Zend Framework",
+			"Implementation of a full text searching functionality using Sphinx"
+		],
+		"Achievements:",
+		[
+			"Further development of Zimbra's SOAP backend in Java and its AJAX frontend based on the Kabuki AJAX Toolkit",
+			"Deployment process automation using Shell Script",
+			"Writing of a Shell Script kit for Zimbra Collaboration Suite 5.0 Open Source Edition, allowing user migration between servers",
+			"Implementation of a O/R mapping layer with caching in the PHP portals using Zend Framework",
+			"Code clean up and rewriting of old structures to improve speed and availability"
+		]
+	],
+	"Ecards and more (Berlin/Germany): 06/2008 - 11/2008",
+	[
+		"http://www.ecards-and-more.de/",
+		"http://www.grusskartenfreunde.de/",
+		"http://www.grusskartenkoenig.de/",
+		"Function: PHP/Java Programmer",
+		"Tasks:",
+		[
+			"Development and maintenance of Grusskartenfreunde.de and Grusskartenkoenig.de using PHP, Smarty framework and MySQL",
+			"Maintenance of backend system written in Java"
+		],
+		"Achievements:",
+		[
+			"Redesign of Grusskartenfreunde.de according to SEO (Search Engine Optimization)",
+			"Development of a customizable iframe to sell cards on partner's pages",
+			"Image processing features translated from Java to PHP, using imagick extension",
+			"Implementation of a new upload controlling feature in PHP, using uploadprogress extension",
+			"Part of payment process translated from Java to PHP",
+			"Migration of infrastructure to new servers, configuring PHP, Apache, MySQL and Sendmail"
+		]
+	],
+	"Resource Inform&aacute;tica (S&atilde;o Paulo/Brazil): 06/2007 - 11/2007",
+	[
+		"http://www.resource.com.br/",
+		"Function: Java/Perl/Shell Programmer",
+		"Tasks:",
+		[
+			"Allocation at Citigroup, developing and maintaining eSALES application in Java, implementing batch jobs in Perl and Shell over Solaris environment, and using JRun and Sybase"
+		],
+		"Achievements:",
+		[
+			"Integration of eSALES with other internal software using batch jobs",
+			"Versioning and deployment control using Hermes"
+		]
+	],
+	"SysMap Solutions (S&atilde;o Paulo, Belo Horizonte/Brazil): 11/2006 - 04/2007",
+	[
+		"http://www.sysmap.com.br/",
+		"Function: Java/Perl Programmer",
+		"Tasks:",
+		[
+			"Allocation at Convergys Latin America, developing customizations in Java and Perl for Infinys solution and configuring test environments in Solaris platform with WebSphere and Oracle",
+			"Allocation in software house in Belo Horizonte, developing CRM for Telemig Celular over Sol Light framework, using Struts, Spring, Hibernate, JSON and AJAX"
+		],
+		"Achievements:",
+		[
+			"Java and Perl extensions for Infinys solution",
+			"Complete WebSphere configuration for test environments",
+			"AJAX and JSON for data exchange in Sol Light framework (internal framework built over Struts, Spring and Hibernate)"
+		]
+	],
+	"Imago IT Solutions (S&atilde;o Paulo/Brazil): 05/2006 - 10/2006",
+	[
+		"http://www.imago.com.br/",
+		"Function: Java Programmer",
+		"Tasks:",
+		[
+			"Allocation at Scopus Tecnologia, working on Bradesco Net Empresa bank system maintenance and development with Java, using Struts framework, Taglibs repository, WebSphere application server, SQL Server and mainframe integration by SNA"
+		],
+		"Achievements:",
+		[
+			"3rd level support for Bradesco Net Empresa users",
+			"Design changes in Bradesco Net Empresa, and further development of features"
+		]
+	],
+	"Emphasys IT Solutions (S&atilde;o Paulo/Brazil): 01/2006 - 04/2006",
+	[
+		"http://www.emphasys.com.br/",
+		"Function: Java Programmer",
+		"Tasks:",
+		[
+			"Java application development for desktop and internet, using Struts and Hibernate frameworks, Taglibs repository, WebLogic application server and Oracle"
+		],
+		"Achievements:",
+		[
+			"Development of a fidelity portal for P&atilde;o de A&ccedil;&uacute;car, one of the largest Brazilian supermarket chains",
+			"Development of an investment control application for Ita&uacute;, one of the largest Brazilian private banks"
+		]
+	],
+	"MaxiHost Hospedagem de Sites (S&atilde;o Paulo/Brazil): 11/2005 - 12/2005",
+	[
+		"http://www.maxihost.com.br/",
+		"Function: PHP/Java Programmer",
+		"Tasks:",
+		[
+			"Customizing of ModernBill, a commercial billing tool for hosting business developed in PHP/MySQL, and integration with the company's website",
+			"Integration of a Java credit card payment system into ModernBill",
+			"Writing of a electronic time clock application in PHP/MySQL for internal use"
+		],
+		"Achievements:",
+		[
+			"Changes in ModernBill to better fit MaxiHost's business structure",
+			"Development of a new standalone application for control of shifts and extra hours"
+		]
+	],
+	"Compal (Bel&eacute;m/Brazil): 09/2000 - 02/2005",
+	[
+		"Function: PHP/Java/Delphi Programmer and Network Administrator",
+		"Tasks:",
+		[
+			"Web design and development with Java, object oriented PHP, MySQL and PostgreSQL",
+			"Application development in Delphi/Interbase",
+			"Configuration and maintenance of Linux systems",
+			"Network administration in Linux and Windows",
+			"Execution of backup routines"
+		],
+		"Achievements:",
+		[
+			"Hardware and software installation and configuration",
+			"Development of a personal website for company's owner, using PHP and PostgreSQL (later changed to MySQL)",
+			"Development of a prototype for a new sales system in Delphi 5 and Interbase"
+		]
+	]
+]

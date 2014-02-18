@@ -20,7 +20,7 @@ function getPage(page) {
 		buildHTML(html, data, false);
 		$("#content").html(html.join(""));
 		// print generated HTML in console
-		console.log($("#content").html());
+		// console.log($("#content").html());
 		$("#content").removeClass("loading").addClass("normal");
 	});
 }
