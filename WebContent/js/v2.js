@@ -16,26 +16,34 @@ function getPage(page) {
 	$("#" + page).removeClass("normal").addClass("highlight");
 	$("#content").removeClass("normal").addClass("loading");
 	$.getJSON("data/" + page + ".json", function(data) {
-		$("#content").html(buildHTML(data));
+		var html = [];
+		buildHTML(html, data, false);
+		$("#content").html(html.join(""));
 		// print generated HTML in console
 		console.log($("#content").html());
 		$("#content").removeClass("loading").addClass("normal");
 	});
 }
 
-function buildHTML(data) {
-	var html = "<ul>";
+function buildHTML(html, data, recursive) {
+	if (recursive) {
+		html.pop(); // "<li>"
+		html.pop(); // "</li>"
+	}
+	html.push("<ul>");
 	$.each(data, function(key, value) {
-		html += "<li>";
+		html.push("<li>");
 		if (value instanceof Object) {
-			html += buildHTML(value);
+			buildHTML(html, value, true);
 		} else {
-			html += value;
+			html.push(value);
 		}
-		html += "</li>";
+		html.push("</li>");
 	});
-	html += "</ul>";
-	return html;
+	html.push("</ul>");
+	if (recursive) {
+		html.push("</li>");
+	}
 }
 
 function setActiveStyle(title) {
