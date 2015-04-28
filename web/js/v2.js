@@ -15,7 +15,7 @@ function getPage(page) {
 	$("#menu li").removeClass("highlight").addClass("normal");
 	$("#" + page).removeClass("normal").addClass("highlight");
 	$("#content").removeClass("normal").addClass("loading");
-	$.getJSON("http://service-chuvadasquatro.rhcloud.com/" + page + "/", function(data) {
+	$.getJSON("http://cvservicespring-chuvadasquatro.rhcloud.com/" + page + "/", function(data) {
 		var html = [];
 		buildHTML(html, data, false);
 		$("#content").html(html.join(""));
