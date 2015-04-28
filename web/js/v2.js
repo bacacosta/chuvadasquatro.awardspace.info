@@ -11,6 +11,11 @@ $("#styleswitcher a").click(function() {
 	setActiveStyle($(this).attr("id"));
 });
 
+$("#download a").attr({
+	target: '_blank',
+	href: "http://cvservicespring-chuvadasquatro.rhcloud.com/public/Rodrigo-Costa.pdf"
+});
+
 function getPage(page) {
 	$("#menu li").removeClass("highlight").addClass("normal");
 	$("#" + page).removeClass("normal").addClass("highlight");
