@@ -1,10 +1,8 @@
-$(document).ready(function() {
-	setActiveStyle(getCachedStyle() ? getCachedStyle() : "word");
-	getPage("info");
-});
+var serviceURL = window.location.href.indexOf("file:///") == 0 ? "http://localhost:8080/" : "http://cvservicespring-chuvadasquatro.rhcloud.com/";
 
-$("#menu a").click(function() {
-	getPage($(this).parent().attr("id"));
+$(document).ready(function() {
+	buildMenu();
+	setActiveStyle(getCachedStyle() ? getCachedStyle() : "word");
 });
 
 $("#styleswitcher a").click(function() {
@@ -13,16 +11,30 @@ $("#styleswitcher a").click(function() {
 
 $("#download a").attr({
 	target: '_blank',
-	href: "http://cvservicespring-chuvadasquatro.rhcloud.com/public/Rodrigo-Costa.pdf"
+	href: serviceURL + "public/Rodrigo-Costa.pdf"
 });
+
+function buildMenu() {
+	$.getJSON(serviceURL + "pages", function(data) {
+		var html = [];
+		$.each(data.data, function(key, value) {
+			html.push("<li id=\"" + value + "\"><a href=\"#\">" + (value.charAt(0).toUpperCase() + value.slice(1)).replace("-", " ") + "</a></li>");
+		});
+		$("#menu ul").html(html.join(""));
+		$("#menu a").click(function() {
+			getPage($(this).parent().attr("id"));
+		});
+		getPage("personal-info");
+	});
+}
 
 function getPage(page) {
 	$("#menu li").removeClass("highlight").addClass("normal");
 	$("#" + page).removeClass("normal").addClass("highlight");
 	$("#content").removeClass("normal").addClass("loading");
-	$.getJSON("http://cvservicespring-chuvadasquatro.rhcloud.com/" + page, function(data) {
+	$.getJSON(serviceURL + page, function(data) {
 		var html = [];
-		buildHTML(html, data, false);
+		buildHTML(html, data.data, false);
 		$("#content").html(html.join(""));
 		// print generated HTML in console
 		// console.log($("#content").html());
@@ -41,7 +53,7 @@ function buildHTML(html, data, recursive) {
 		if (value instanceof Object) {
 			buildHTML(html, value, true);
 		} else {
-			html.push(value.substring(0, 7) == "http://" ? "<a href=\"" + value + "\" target=\"_blank\">" + value + "</a>" : value);
+			html.push(value.indexOf("http://") > -1 || value.indexOf("https://") > -1 ? buildLink(value) : value);
 		}
 		html.push("</li>");
 	});
@@ -49,6 +61,21 @@ function buildHTML(html, data, recursive) {
 	if (recursive) {
 		html.push("</li>");
 	}
+}
+
+function buildLink(text) {
+	var textArray = text.split(" ");
+	for (var i = 0; i < textArray.length; i++) {
+		var hasComma = false;
+		if (textArray[i].indexOf("http://") == 0 || textArray[i].indexOf("https://") == 0) {
+			if (textArray[i].substr(textArray[i].length - 1) == ",") {
+				textArray[i] = textArray[i].substr(0, textArray[i].length - 1);
+				hasComma = true;
+			}
+			textArray[i] = "<a href=\"" + textArray[i] + "\" target=\"_blank\">" + textArray[i] + "</a>" + (hasComma ? "," : "");
+		}
+	}
+	return textArray.join(" ");
 }
 
 function setActiveStyle(title) {
