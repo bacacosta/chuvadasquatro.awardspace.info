@@ -15,7 +15,7 @@ $("#download a").attr({
 });
 
 function buildMenu() {
-	$.getJSON(serviceURL + "pages", function(data) {
+	$.getJSON(serviceURL + "rest/pages", function(data) {
 		var html = [];
 		$.each(data.data, function(key, value) {
 			html.push("<li id=\"" + value + "\"><a href=\"#\">" + (value.charAt(0).toUpperCase() + value.slice(1)).replace("-", " ") + "</a></li>");
@@ -32,7 +32,7 @@ function getPage(page) {
 	$("#menu li").removeClass("highlight").addClass("normal");
 	$("#" + page).removeClass("normal").addClass("highlight");
 	$("#content").removeClass("normal").addClass("loading");
-	$.getJSON(serviceURL + page, function(data) {
+	$.getJSON(serviceURL + "rest/" + page, function(data) {
 		var html = [];
 		buildHTML(html, data.data, false);
 		$("#content").html(html.join(""));
