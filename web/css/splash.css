@@ -1,0 +1,48 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font:14px Arial, sans-serif;
+}
+
+nav {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+}
+
+nav ul {
+	display:table-row;
+}
+
+nav li {
+	display:table-cell;
+	text-align:center;
+}
+
+li.normal a {
+	color:#000000;
+	text-decoration:none;
+}
+
+li.normal a:hover {
+	text-decoration:underline;
+}
+
+li.highlight a {
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+main {
+	clear:both;
+	padding:40px;
+	text-align:right;
+}
+
+main li {
+	list-style:none;
+}

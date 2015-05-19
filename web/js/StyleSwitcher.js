@@ -29,6 +29,9 @@ var styleSwitcher = {
 				case "black":
 					credits = "Black by Rodrigo Costa";
 				break;
+				case "splash":
+					credits = "Splash by Rodrigo Costa";
+				break;
 			}
 			$("#stylecredits").html(credits);
 		},
