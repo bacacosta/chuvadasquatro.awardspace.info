@@ -4,13 +4,25 @@
 }
 
 body {
+	background:#ffffff url("../img/splash/background.png") bottom left no-repeat fixed;
 	font:14px Arial, sans-serif;
+}
+
+header {
+	width:100%;
+	position:fixed;
+	margin-top:30px;
+	padding:0 0 20px 20px;
+	background:#ffffff;
 }
 
 nav {
 	display:table;
 	width:100%;
+	height:30px;
+	position:fixed;
 	table-layout:fixed;
+	background:#ffffff;
 }
 
 nav ul {
@@ -20,6 +32,7 @@ nav ul {
 nav li {
 	display:table-cell;
 	text-align:center;
+	vertical-align:middle;
 }
 
 li.normal a {
@@ -38,9 +51,13 @@ li.highlight a {
 }
 
 main {
-	clear:both;
-	padding:40px;
+	padding:20px;
 	text-align:right;
+}
+
+main ul {
+	margin-right:40px;
+	line-height:26px;
 }
 
 main li {
