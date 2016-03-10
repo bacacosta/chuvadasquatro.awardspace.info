@@ -19,9 +19,9 @@ body {
 }
 
 header {
-	background:url("../img/cidade/header.png") right no-repeat;
 	height:80px;
 	margin-bottom:30px;
+	background:url("../img/cidade/header.png") right no-repeat;
 }
 
 header h1, header address {
