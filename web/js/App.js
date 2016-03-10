@@ -1,5 +1,5 @@
 var app = {
-		serviceURL: window.location.href.indexOf("file:///") == 0 ? "http://localhost:8080/" : "http://cvservicespring-chuvadasquatro.rhcloud.com/",
+		serviceURL: "http://cvservicespring-chuvadasquatro.rhcloud.com/",
 
 		init: function() {
 			menu.init();
