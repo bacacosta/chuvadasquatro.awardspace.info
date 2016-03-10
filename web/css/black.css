@@ -8,18 +8,19 @@ img {
 }
 
 body {
-	background:#000000;
+	background:url("../img/black/background.jpg");
 	font:12px Courier New, monospace;
 	color:#ffffff;
 }
 
 #box {
 	width:800px;
-	margin:20px auto;
+	margin:80px auto;
+	opacity:0.76;
 }
 
 header {
-	padding:10px 0;
+	margin-bottom:20px;
 	text-align:right;
 }
 
@@ -38,11 +39,14 @@ header address {
 
 nav li {
 	float:left;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
 	border-top:1px solid #ffffff;
-	border-right:1px solid #ffffff;
 	border-left:1px solid #ffffff;
+	border-right:1px solid #ffffff;
 	margin-right:10px;
 	padding:10px;
+	box-shadow:4px 4px 10px #ffffff;
 	list-style:none;
 	font-weight:bold;
 }
@@ -73,6 +77,7 @@ main {
 	clear:both;
 	height:380px;
 	padding:10px;
+	box-shadow:4px 4px 10px #aaaaaa;
 	overflow:auto;
 	color:#000000;
 }
@@ -94,28 +99,28 @@ main ul {
 	line-height:26px;
 }
 
+footer {
+	margin-top:30px;
+	font-weight:bold;
+}
+
 #styleswitcher {
 	float:left;
-	padding:4px 0;
 }
 
 #styleswitcher img {
 	border:1px solid #ffffff;
+	box-shadow:4px 4px 10px #aaaaaa;
 	vertical-align:middle;
 }
 
-#stylecredits {
-	margin-left:4px;
-}
-
 #download {
-	float:left;
-	padding:6px 100px;
+	float:right;
+	margin-top:3px;
 }
 
 #download a {
 	color:#ffffff;
-	font-size:12px;
 	text-decoration:none;
 }
 
