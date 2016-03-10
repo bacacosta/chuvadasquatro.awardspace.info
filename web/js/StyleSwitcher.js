@@ -21,19 +21,7 @@ var styleSwitcher = {
 		},
 
 		setStyleCredits: function(title) {
-			var credits = "";
-			switch(title) {
-				case "word":
-					credits = "Word by Rodrigo Costa";
-				break;
-				case "black":
-					credits = "Black by Rodrigo Costa";
-				break;
-				case "splash":
-					credits = "Splash by Rodrigo Costa";
-				break;
-			}
-			$("#stylecredits").html(credits);
+			$("#stylecredits").html($("#" + title + " img").attr("title"));
 		},
 
 		getCachedStyle: function() {
