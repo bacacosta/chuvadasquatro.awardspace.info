@@ -19,7 +19,7 @@ header {
 	top:40px;
 	width:100%;
 	height:150px;
-	background:url("../img/lines/background.gif");
+	background:url("../img/lines/header.png") no-repeat center, url("../img/lines/background.gif");
 }
 
 header h1, header address {
