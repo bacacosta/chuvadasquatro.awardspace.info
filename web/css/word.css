@@ -8,7 +8,9 @@ img {
 }
 
 body {
-	background:#9b9ab3 url("../img/word/background.gif") no-repeat;
+	background-color:#9b9ab3;
+	background-image:url("../img/word/background.png"), url("../img/word/square.png"), url("../img/word/square.png");
+	background-repeat:no-repeat, repeat-x, repeat-y;
 	font:14px Arial, sans-serif;
 }
 
