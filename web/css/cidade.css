@@ -1,137 +1,137 @@
 * {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 
 img {
-	border:0;
+	border: 0;
 }
 
 body {
-	background:#000000 url("../img/cidade/background.png") top left repeat-x;
-	font:12px Arial, sans-serif;
-	color:#ffffff;
+	background: #000000 url("../img/cidade/background.png") top left repeat-x;
+	font: 12px Arial, sans-serif;
+	color: #ffffff;
 }
 
 #box {
-	width:700px;
-	margin:80px auto;
+	width: 700px;
+	margin: 80px auto;
 }
 
 header {
-	height:80px;
-	margin-bottom:30px;
-	background:url("../img/cidade/header.png") right no-repeat;
+	height: 80px;
+	margin-bottom: 30px;
+	background: url("../img/cidade/header.png") right no-repeat;
 }
 
 header h1, header address {
-	display:none;
+	display: none;
 }
 
 #middle {
-	width:100%;
-	height:222px;
-	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
-	opacity:0.94;
+	width: 100%;
+	height: 222px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+	opacity: 0.94;
 }
 
 nav {
-	float:left;
-	width:200px;
-	height:222px;
+	float: left;
+	width: 200px;
+	height: 222px;
 }
 
 nav li {
-	margin:6px;
-	padding:6px;
-	text-align:right;
-	list-style:none;
-	font-size:16px;
+	margin: 6px;
+	padding: 6px;
+	text-align: right;
+	list-style: none;
+	font-size: 16px;
 }
 
 li.normal {
-	background:#e1e1e1;
+	background: #e1e1e1;
 }
 
 li.normal a {
-	color:#000000;
-	text-decoration:none;
+	color: #000000;
+	text-decoration: none;
 }
 
 li.normal a:hover {
-	text-decoration:underline;
+	text-decoration: underline;
 }
 
 li.highlight {
-	background:#9b9b9b;
+	background: #9b9b9b;
 }
 
 li.highlight a {
-	color:#ffffff;
-	text-decoration:none;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 main {
-	float:left;
-	width:488px;
-	height:210px;
-	margin-top:6px;
-	padding-right:6px;
-	overflow:auto;
+	float: left;
+	width: 488px;
+	height: 210px;
+	margin-top: 6px;
+	padding-right: 6px;
+	overflow: auto;
 }
 
 main.normal {
-	background:#9b9b9b;
+	background: #9b9b9b;
 }
 
 main.loading {
-	background:#9b9b9b url("../img/cidade/loading.gif") no-repeat center;
+	background: #9b9b9b url("../img/cidade/loading.gif") no-repeat center;
 }
 
 main ul {
-	margin-left:8px;
-	line-height:26px;
-	list-style:none;
+	margin-left: 8px;
+	line-height: 26px;
+	list-style: none;
 }
 
 main a {
-	color:#ffffff;
-	text-decoration:none;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 main a:hover {
-	text-decoration:underline;
+	text-decoration: underline;
 }
 
 footer {
-	margin-top:50px;
+	margin-top: 50px;
 }
 
 #styleswitcher {
-	float:left;
+	float: left;
 }
 
 #styleswitcher img {
-	box-shadow:0 2px 4px 0 rgba(225, 225, 225, 0.4), 0 2px 10px 0 rgba(225, 225, 225, 0.38);
-	vertical-align:middle;
+	box-shadow: 0 2px 4px 0 rgba(225, 225, 225, 0.4), 0 2px 10px 0 rgba(225, 225, 225, 0.38);
+	vertical-align: middle;
 }
 
 #stylecredits {
-	margin-left:4px;
-	text-shadow:1px 1px 2px #e1e1e1;
+	margin-left: 4px;
+	text-shadow: 1px 1px 2px #e1e1e1;
 }
 
 #download {
-	float:right;
-	padding-top:2px;
-	text-shadow:1px 1px 2px #e1e1e1;
+	float: right;
+	padding-top: 2px;
+	text-shadow: 1px 1px 2px #e1e1e1;
 }
 
 #download a {
-	color:#ffffff;
-	text-decoration:none;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 #download a:hover {
-	text-decoration:underline;
+	text-decoration: underline;
 }
