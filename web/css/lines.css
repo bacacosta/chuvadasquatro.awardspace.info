@@ -10,7 +10,7 @@ img {
 body {
 	background:url("../img/lines/background.gif");
 	overflow-y:scroll;
-	font:20px Lucida Console, monospace;
+	font:20px "Lucida Console", monospace;
 	color:#330000;
 }
 
