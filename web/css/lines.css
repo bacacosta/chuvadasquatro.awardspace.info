@@ -111,11 +111,11 @@ footer {
 
 #stylecredits {
 	float: left;
-	margin: 4px 6px;
+	margin-right: 6px;
 }
 
 #download {
-	margin: 10px 6px;
+	margin: 6px;
 }
 
 #download a {
